@@ -1,0 +1,38 @@
+.comments {
+  text-align: center;
+
+  // &__content {
+  // }
+
+  &__title {
+    font-size: $fs-h2;
+    line-height: 1.1;
+    font-weight: $fw-bold;
+    margin-bottom: $padding-treble;
+  }
+
+  &__carousel {
+    margin-bottom: $area-double;
+  }
+
+  // &__article {
+  //   // margin: 0 $area-base;
+  //   // width: 100%;
+  //   // width: 33.33%;
+  //   // flex: 0 0 auto;
+  // }
+
+  @media (max-width: map-get($screens, md)) {
+    &__carousel {
+      margin-bottom: $area-quatro;
+    }
+
+    &__content {
+      padding: $padding-treble 0;
+    }
+
+    &__title {
+      font-size: $fs-h3;
+    }
+  }
+}

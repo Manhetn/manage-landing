@@ -1,1 +1,26 @@
-@import '../../vendor/normalize.scss';
+
+// @import 'swiper/css';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+@import '../../styles/variables.scss';
+@import '../../vendor/reset.scss';
+@import '../../vendor/fonts.scss';
+@import '../../vendor/swiper.scss';
+@import '../../styles/global-general.scss';
+
+@import '../../styles/blocks/container.scss';
+@import '../../styles/blocks/button.scss';
+@import '../../styles/blocks/input.scss';
+@import '../../styles/blocks/form.scss';
+@import '../../styles/blocks/icon.scss';
+
+@import '../../styles/blocks/header.scss';
+@import '../../styles/blocks/navigation.scss';
+@import '../../styles/blocks/intro.scss';
+@import '../../styles/blocks/difference.scss';
+@import '../../styles/blocks/simplify-works.scss';
+@import '../../styles/blocks/comments.scss';
+@import '../../styles/blocks/comment-article.scss';
+@import '../../styles/blocks/footer.scss';

@@ -1,0 +1,41 @@
+.button {
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  align-items: center;
+  border-radius: 100vmax;
+  padding: 1.25em 2.5em;
+  font-weight: $fw-bold;
+  font-size: $fs-base-least;
+  line-height: 1;
+  color: $color-light-gray;
+  background-color: $color-primary-red;
+  box-shadow: 0 1.125em 1em -1em $color-primary-red-darker;
+  transition: background-color 0.3s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-primary-red-light;
+  }
+
+  &--shadow-none {
+    box-shadow: none;
+  }
+
+  &--inverted {
+    background-color: $colo-white;
+    color: $color-primary-red;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $colo-white;
+      color: $color-primary-red-light;
+    }
+  }
+
+  &--icon {
+    color: $color-primary-blue;
+    border-radius: none;
+  }
+}

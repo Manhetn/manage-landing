@@ -1,0 +1,47 @@
+.navigation {
+  &--footer {
+    .navigation__list {
+      height: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: $area-base - 1 clamp($area-base-large, 5vw, ($area-largest * 2));
+      align-items: stretch;
+    }
+
+    .navigation__link {
+      font-size: $fs-base;
+      color: inherit;
+
+      &:hover {
+        color: $color-primary-red-darker;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: clamp($area-base, 5vw, $padding-treble) 80px;
+    font-weight: $fw-medium;
+  }
+
+  // &__list-item {
+  // }
+
+  &__link {
+    text-decoration: none;
+    font-size: $fs-base-least;
+    color: $color-primary-blue;
+
+    &:hover {
+      color: $color-grayish-blue;
+    }
+  }
+
+  @media (max-width: map-get($screens, md)) {
+    &--footer {
+      .navigation__list {
+        gap: $area-base $area-large;
+      }
+    }
+  }
+}

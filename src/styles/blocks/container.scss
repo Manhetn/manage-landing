@@ -1,0 +1,5 @@
+.container {
+  width: min($max-width, 100% - ($area-base * 2));
+  padding: $area-large 0;
+  margin-inline: auto;
+}

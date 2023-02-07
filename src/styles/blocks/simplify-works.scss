@@ -1,0 +1,34 @@
+.simplify-works {
+  color: $colo-white;
+  background-color: $color-primary-red;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $area-large 0;
+  }
+
+  &__title {
+    max-width: 547px;
+    font-size: $fs-h1;
+    font-weight: $fw-bold;
+    line-height: 1.1;
+  }
+
+  // &__button-get-started {
+  // }
+
+  @media (max-width: map-get($screens, md)) {
+    &__content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: $fs-h2;
+      font-weight: $fw-medium;
+      margin-bottom: $area-base-large;
+    }
+  }
+}

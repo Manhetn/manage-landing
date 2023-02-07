@@ -1,0 +1,9 @@
+.body {
+  font-size: $fs-base;
+  font-family: $ff-primary;
+  color: $color-primary-blue;
+
+  &--not-scroll {
+    overflow: hidden;
+  }
+}

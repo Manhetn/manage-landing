@@ -1,0 +1,87 @@
+.intro {
+  &__content {
+    display: grid;
+    gap: $area-base;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  // &__basic-content {
+  // }
+
+  &__title {
+    font-size: $fs-h1;
+    line-height: 1.2;
+    font-weight: $fw-bold;
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    color: $color-grayish-blue;
+    max-width: 32ch;
+    margin-bottom: 39px;
+  }
+
+  // &__button {
+  // }
+  // &__extra-content {
+  // }
+  // &__chart {
+  // }
+
+  @media (max-width: map-get($screens, lg)) {
+    &__content {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    &__basic-content {
+      max-width: 70vw;
+      min-width: 300px;
+      margin: 0 auto;
+    }
+
+    &__text {
+      max-width: none;
+    }
+
+    &__basic-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__extra-content {
+      grid-row-start: 1;
+    }
+
+    &__chart {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: map-get($screens, md)) {
+    &__content {
+      padding: $area-double 0;
+    }
+
+    &__basic-content {
+      max-width: none;
+    }
+
+    &__title {
+      font-size: $fs-h2;
+    }
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    &__title {
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      max-width: 300px;
+      margin-bottom: 32px;
+    }
+  }
+}

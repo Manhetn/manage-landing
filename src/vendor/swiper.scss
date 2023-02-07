@@ -1,0 +1,80 @@
+.swiper {
+  padding: 0 25.85%;
+
+  &-wrapper {
+    align-items: stretch;
+  }
+
+  &-slide {
+    padding: 0 16px;
+  }
+
+  &-pagination {
+    position: static;
+    display: none;
+  }
+
+  &-button-prev,
+  &-button-next {
+    color: $colo-white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $color-primary-red;
+
+    &:hover {
+      background-color: $color-primary-red-light;
+    }
+  }
+
+  &-button-prev {
+    .icon {
+      margin-right: 6px;
+    }
+  }
+
+  &-button-next {
+    .icon {
+      margin-left: 6px;
+    }
+  }
+
+  &-pagination {
+    margin-top: 12px;
+  }
+
+  &-pagination-bullet {
+    border: 1px solid $color-primary-red;
+    background-color: $colo-white;
+    opacity: 1;
+  }
+
+  &-pagination-bullet-active {
+    background-color: $color-primary-red;
+  }
+
+  @media (max-width: map-get($screens, xl)) {
+    padding: 0 calc((100vw - 768px) / (1260 - 768) * (276 - 48) + 48px);
+  }
+
+  @media (max-width: map-get($screens, md)) {
+    padding: 0 calc((100vw - 480px) / (768 - 480) * 48px);
+
+    &-button-prev,
+    &-button-next {
+      display: none;
+    }
+
+    &-pagination {
+      display: block;
+    }
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    padding: 0;
+
+    &-slide {
+      padding: 0;
+    }
+  }
+}

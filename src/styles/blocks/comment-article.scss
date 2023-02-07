@@ -1,0 +1,24 @@
+.comment-article {
+  &__avatar {
+    width: $area-quatro;
+    margin: 0 auto;
+    position: relative;
+    top: calc($area-quatro / 2);
+  }
+
+  &__content {
+    // margin: 0 12px;
+    border-radius: $radius-base;
+    background-color: $color-light-gray;
+    padding: $padding-treble $area-double $area-double;
+  }
+
+  &__title {
+    font-weight: $fw-bold;
+    margin-bottom: $area-base;
+  }
+
+  &__text {
+    color: $color-grayish-blue;
+  }
+}
