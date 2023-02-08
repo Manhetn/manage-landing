@@ -29,11 +29,5 @@ export default class Header {
         }
       });
     });
-
-    // window.addEventListener('scroll', () => {
-    //   console.log(window.scrollY);
-    //   // __button-toggle-navigation--with-bg
-    //   // document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
-    // });
   }
 }

@@ -1,6 +1,10 @@
 .simplify-works {
   color: $colo-white;
   background-color: $color-primary-red;
+  background-image: url(../../assets/images/bg-simplify-section-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
 
   &__content {
     display: flex;
@@ -26,6 +30,15 @@
       font-size: $fs-h2;
       font-weight: $fw-medium;
       margin-bottom: $area-base-large;
+    }
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    background-image: url(../../assets/images/bg-simplify-section-mobile.svg);
+    background-position: left;
+
+    &__content {
+      padding: $area-large + 20 0;
     }
   }
 }

@@ -1,4 +1,10 @@
 .header {
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: 10;
+
   &--scroll {
     .header__button-toggle-navigation {
       background-color: $colo-white;

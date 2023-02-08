@@ -8,18 +8,6 @@
 }
 
 /* Remove default margin */
-// body,
-// h1,
-// h2,
-// h3,
-// h4,
-// p,
-// figure,
-// blockquote,
-// dl,
-// dd {
-//   margin: 0;
-// }
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +33,6 @@ body {
 
 /* Set core body defaults */
 body {
-  // min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.8;
 }

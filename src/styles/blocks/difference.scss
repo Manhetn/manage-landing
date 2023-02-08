@@ -121,7 +121,7 @@
   }
 
   @media (max-width: map-get($screens, sm)) {
-     &__title {
+    &__title {
       font-size: $fs-h3 - 3;
     }
   }

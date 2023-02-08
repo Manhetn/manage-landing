@@ -3,6 +3,7 @@
     display: grid;
     gap: $area-base;
     grid-template-columns: 1fr 1fr;
+    padding-top: 174px;
   }
 
   &__title {
@@ -54,12 +55,8 @@
 
   @media (max-width: map-get($screens, md)) {
     &__content {
-      padding: $area-double 0;
+      padding: 136px 0 $area-double;
     }
-
-    // &__basic-content {
-    //   max-width: none;
-    // }
 
     &__title {
       font-size: $fs-h2;

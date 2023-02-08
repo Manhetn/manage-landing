@@ -1,0 +1,12 @@
+.main {
+  background-image: url(../../assets/images/bg-tablet-pattern.svg),
+    url(../../assets/images/bg-tablet-pattern.svg);
+  background-position: -446px 1123px, top -225px right -153px;
+  background-repeat: no-repeat, no-repeat;
+  padding-bottom: 0;
+
+  @media (max-width: map-get($screens, sm)) {
+    background-position: 246px 483px, top -84px right -133px;
+    background-size: 350px, 450px;
+  }
+}
