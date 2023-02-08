@@ -6,7 +6,7 @@
   }
 
   &-slide {
-    padding: 0 16px;
+    padding: 0 $area-base;
   }
 
   &-pagination {
@@ -40,7 +40,7 @@
   }
 
   &-pagination {
-    margin-top: 12px;
+    margin-top: $area-base-small;
   }
 
   &-pagination-bullet {

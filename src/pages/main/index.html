@@ -46,7 +46,7 @@
           </ul>
         </nav>
         <div class="header__buttons">
-          <button class="button header__button-get-started">Get Started</button>
+          <button class="button header__button-get-started" type="button">Get Started</button>
           <button class="header__button-toggle-navigation">
             <svg
               class="icon icon--burger header__logo-icon"
@@ -84,7 +84,7 @@
               Manage makes it simple for software teams to plan day-to-day tasks
               while keeping the larger team goals in view.
             </p>
-            <button class="button intro__button">Get Started</button>
+            <button class="button intro__button" type="button">Get Started</button>
           </div>
           <div class="intro__extra-content">
             <img
@@ -230,7 +230,7 @@
               </svg>
             </div>
           </div>
-          <button class="button comments__button-get-started">
+          <button class="button comments__button-get-started" type="button">
             Get Started
           </button>
         </div>
@@ -242,6 +242,7 @@
           </h2>
           <button
             class="button button--inverted button--shadow-none simplify-works__button-get-started"
+            type="button"
           >
             Get Started
           </button>
@@ -370,14 +371,25 @@
           </ul>
         </nav>
         <div class="footer__form-container">
-          <form class="form footer__form">
+          <form class="form footer__form" action="/services/submit-form">
             <div class="form__row footer__form-row">
-              <input
-                class="input footer__input"
-                type="email"
-                placeholder="Updates in your inbox..."
-              />
-              <button class="button button--shadow-none footer__button-go">GO</button>
+              <div class="input-field">
+                <input
+                  class="input-field__input footer__input"
+                  name="email"
+                  type="email"
+                  placeholder="Updates in your inbox..."
+                />
+                <span class="input-field__error"
+                  >Please insert a valid email</span
+                >
+              </div>
+              <button
+                class="button button--shadow-none footer__button-go"
+                type="submit"
+              >
+                GO
+              </button>
             </div>
           </form>
         </div>

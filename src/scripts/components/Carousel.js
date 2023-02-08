@@ -2,8 +2,7 @@ import Swiper from 'swiper/bundle';
 
 export default class Carousel {
   constructor(elem) {
-    this.elem = elem;
-    this.carousel = null;
+    this.swiper = elem;
   }
 
   init() {
@@ -11,15 +10,13 @@ export default class Carousel {
   }
 
   initializeSwiper() {
-    new Swiper('.swiper', {
-      // direction: 'horizontal' | 'vertical',
+    new Swiper(this.swiper, {
       loop: true,
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true,
       },
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

@@ -20,12 +20,9 @@
 
   &__list {
     display: flex;
-    gap: clamp($area-base, 5vw, $padding-treble) 80px;
+    gap: clamp($area-base, 5vw, $area-treble) $area-large;
     font-weight: $fw-medium;
   }
-
-  // &__list-item {
-  // }
 
   &__link {
     text-decoration: none;

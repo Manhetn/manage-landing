@@ -5,28 +5,18 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  // &__basic-content {
-  // }
-
   &__title {
     font-size: $fs-h1;
     line-height: 1.2;
     font-weight: $fw-bold;
-    margin-bottom: 45px;
+    margin-bottom: $area-treble - 3;
   }
 
   &__text {
     color: $color-grayish-blue;
     max-width: 32ch;
-    margin-bottom: 39px;
+    margin-bottom: $area-double + 1;
   }
-
-  // &__button {
-  // }
-  // &__extra-content {
-  // }
-  // &__chart {
-  // }
 
   @media (max-width: map-get($screens, lg)) {
     &__content {
@@ -49,6 +39,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      max-width: 70vw;
+      min-width: 300px;
     }
 
     &__extra-content {
@@ -65,9 +57,9 @@
       padding: $area-double 0;
     }
 
-    &__basic-content {
-      max-width: none;
-    }
+    // &__basic-content {
+    //   max-width: none;
+    // }
 
     &__title {
       font-size: $fs-h2;
@@ -76,12 +68,13 @@
 
   @media (max-width: map-get($screens, sm)) {
     &__title {
-      margin-bottom: 8px;
+      margin-bottom: $area-half;
+      font-size: $fs-h3;
     }
 
     &__text {
       max-width: 300px;
-      margin-bottom: 32px;
+      margin-bottom: $area-double;
     }
   }
 }

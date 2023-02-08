@@ -1,11 +1,4 @@
 .header {
-  // padding: $padding-treble 0;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // z-index: 10;
-
   &--scroll {
     .header__button-toggle-navigation {
       background-color: $colo-white;
@@ -30,7 +23,7 @@
   }
 
   &__content {
-    padding: $padding-treble 0 0 0;
+    padding: $area-treble 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,12 +38,6 @@
   &__logo-img {
     height: 100%;
   }
-
-  // &__logo-icon {
-  // }
-
-  // &__navigation {
-  // }
 
   &__buttons {
     display: flex;
@@ -72,25 +59,18 @@
     .icon--close {
       display: none;
     }
-
-    // &--with-bg {
-    //   background-color: $colo-white;
-    // }
-  }
-
-  &__button-get-started {
   }
 
   @media (max-width: map-get($screens, lg)) {
     &__content {
-      padding-top: 48px;
+      padding-top: $area-treble;
     }
 
     .header__navigation-list {
       flex-direction: column;
       align-items: center;
-      width: min(1110px, 100% - 32px);
-      padding: $padding-treble;
+      width: min(1110px, 100% - $area-double);
+      padding: $area-treble;
       margin: 136px auto 0 auto;
       background-color: white;
       border-radius: 8px;
@@ -99,8 +79,8 @@
 
     .header__button-toggle-navigation {
       position: fixed;
-      top: 48px;
-      right: 16px;
+      top: $area-treble;
+      right: $area-base;
       z-index: 20;
     }
 

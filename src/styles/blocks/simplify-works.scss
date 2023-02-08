@@ -16,9 +16,6 @@
     line-height: 1.1;
   }
 
-  // &__button-get-started {
-  // }
-
   @media (max-width: map-get($screens, md)) {
     &__content {
       flex-direction: column;

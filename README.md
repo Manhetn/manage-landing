@@ -6,11 +6,13 @@
 - JS
 - Webpack
 
-**Description:_** Easy project using HTML, SCSS, vanilla JS
+**Description:** Easy project using HTML, SCSS, vanilla JS
 
 # Demo:
 
-https://Manhetn.github.io/cleaning-x
+https://Manhetn.github.io/manage-landing
+
+You can see mockups in repositories in folder **_design_**
 
 # Installation:
 _node.js and npm must be installed to work with the project_
@@ -18,7 +20,7 @@ _node.js and npm must be installed to work with the project_
 Copy the project to your computer:
 
 ```
-git clone https://github.com/Manhetn/cleaning-x.git
+git clone https://github.com/Manhetn/manage-landing.git
 ```
 
 Install Dependencies:

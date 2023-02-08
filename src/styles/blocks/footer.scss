@@ -21,15 +21,13 @@
     color: $colo-white;
   }
 
-  &__logo-img {
+  &__button-go {
+    min-height: 51px;
   }
 
   &__list-social {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__list-social-item {
   }
 
   &__social-link {
@@ -56,12 +54,6 @@
     gap: $area-half;
   }
 
-  &__input {
-  }
-
-  &__button-go {
-  }
-
   &__copyright {
     color: $color-grayish-blue;
     width: fit-content;
@@ -75,7 +67,7 @@
     &__container {
       flex-direction: column;
       align-items: center;
-      padding: 48px 0;
+      padding: $area-treble 0;
     }
 
     &__logo-img {
@@ -83,9 +75,9 @@
     }
 
     &__social {
-       max-width: 300px;
-      gap: $padding-treble;
-      margin-bottom: $padding-treble;
+      max-width: 300px;
+      gap: $area-treble;
+      margin-bottom: $area-treble;
     }
 
     &__list-social {
@@ -95,12 +87,12 @@
     &__navigation {
       order: -1;
       max-width: 260px;
-      margin: 0 0 48px;
+      margin: 0 0 $area-treble;
     }
 
     &__form-container {
       order: -2;
-      margin-bottom: 48px;
+      margin-bottom: $area-treble;
     }
 
     &__copyright {
@@ -113,14 +105,5 @@
     &__copyright {
       font-size: $fs-base-least;
     }
-
-    // &__form-container {
-    //   // max-width: 228px;
-    //   // align-self: stretch;
-    // }
-
-    // &__input {
-    //   // flex: 1 1 auto;
-    // }
   }
 }

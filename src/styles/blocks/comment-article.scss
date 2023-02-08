@@ -7,10 +7,9 @@
   }
 
   &__content {
-    // margin: 0 12px;
     border-radius: $radius-base;
     background-color: $color-light-gray;
-    padding: $padding-treble $area-double $area-double;
+    padding: $area-treble $area-double $area-double;
   }
 
   &__title {
