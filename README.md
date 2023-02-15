@@ -1,5 +1,9 @@
 # Manage landing
 
+project taken from https://www.frontendmentor.io
+
+challenge: https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5
+
 ## tools:
 - HTML
 - SCSS
